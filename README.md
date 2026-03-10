@@ -1,7 +1,7 @@
 # Desafio QA Beedoo 2026
 ## Análise inicial da aplicação
 Em um teste exploratório, verifiquei o que a aplicação faz em seu core, identificando as suas capacidades.
-Deste ponto, tomei notas e fiz um rascunho, usando de IA - ChatGPT - com um certo nível de especialização - provido pelo curso de QA (LumeStack) que concluir recentemente.
+Deste ponto, tomei notas e fiz um rascunho, usando de IA - ChatGPT - com um certo nível de especialização e warm up - provido pelo curso de QA (LumeStack) que concluir recentemente.
 Esta IA foi usada para avaliar este rascunho. Ela não reconheceu a princípio que era um rascunho, mesmo sendo afirmado no prompt que era um rascunho.
 Mesmo assim, as informações oferecidas sobre edge cases foram importantes.
 Outra análise que fiz foi verificar os códigos HTML para ver se seus identificadores eram simples ou complexos para a implantação de automatizações.
@@ -12,8 +12,16 @@ Vejo como crítico que a aplicação esteja adesa com as regras de negócio esta
 
 ## Decisões tomadas para criação dos testes
 O maior desafio encontrado foi não conhecer as regras de negócio da aplicação. Ou mesmo não ter algum manual.
-Por tanto, tive que inferir algumas situações de uso da aplicação.
+Por tanto, tive que inferir algumas situações de uso da aplicação. Partindo desta escolha, inferi que:
+>> Todos os campos de cadastro são obrigatórios;
+>> A exibição de dados da página é "somente leitura", não levando ao acesso do curso em si;
+>> Ao excluir um curso, a página deveria ser atualizada automaticamente.
 
-## Explicação do seu raciocínio durante a análise
+## Explicação do raciocínio durante a análise
 O primeiro ponto é saber se as funcionalidades "funcionam". Botões, links e o que mais for "interagível" na página.
-Depois, por não conhecer as regras de negócio, inferi algumas funcionalidades - como por exemplo, admitir que todos os campos do formulário de cadastro são obrigatórios de serem preenchidos.
+Depois, por não conhecer as regras de negócio, inferi algumas funcionalidades, conforme explicado anteriormente - como por exemplo, admitir que todos os campos do formulário de cadastro são obrigatórios de serem preenchidos.
+
+## Planilha de testes, bugs encontrados e artefatos de comprovação
+Todos os dados estão em uma planilha do Google Docs, com duas abas: uma com os casos de testes e outra com o report dos bugs e melhorias reportados.
+Link de acesso - somente leitura:
+https://docs.google.com/spreadsheets/d/1Y55IeTCh9FEDrB87l4gVkdxtMx4kjfGpQ0uTCRoiwUc/edit?usp=sharing
